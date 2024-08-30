@@ -84,12 +84,12 @@
         </div>
       </div>
       <div class="card project-card">
-        <div class="card-body">
-          <h5 class="card-title">Estudios</h5>
+      <div class="card-body">
+      <h5 class="card-title">Estudios</h5>
           <p class="card-text">Estoy estudiando tecnología en sistemas en la USC</p>
           <img src="https://www.elpais.com.co/especiales/educacion-superior/assets/img/u/usc-2-1.jpg" alt="USC Logo" class="img-fluid" style="width: 100px;">
-        </div>
-      </div>
+  </div>
+    </div>
       <div class="card project-card">
         <div class="card-body">
           <h5 class="card-title">Motivación</h5>
@@ -135,7 +135,6 @@
       <button type="submit" class="btn btn-primary">Entregar</button>
     </form>
   </section>
-
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -147,33 +146,30 @@
       document.getElementById('introduccion-section').style.display = 'block';
       document.getElementById('principal-section').style.display = 'none';
       document.getElementById('proyectos-section').style.display = 'none';
-      document.getElementById('formularios-section').style.display = 'none';
-    });
-
+      document.getElementById('formularios-section').style.display = 'none'; });
     document.getElementById('principal-link').addEventListener('click', function(event) {
       event.preventDefault();
       document.getElementById('introduccion-section').style.display = 'none';
       document.getElementById('principal-section').style.display = 'block';
       document.getElementById('proyectos-section').style.display = 'none';
       document.getElementById('formularios-section').style.display = 'none';
-    });
+});
 
     document.getElementById('proyectos-link').addEventListener('click', function(event) {
-      event.preventDefault();
+    event.preventDefault();
       document.getElementById('introduccion-section').style.display = 'none';
       document.getElementById('principal-section').style.display = 'none';
-      document.getElementById('proyectos-section').style.display = 'block';
+    document.getElementById('proyectos-section').style.display = 'block';
       document.getElementById('formularios-section').style.display = 'none';
     });
 
     document.getElementById('formularios-link').addEventListener('click', function(event) {
       event.preventDefault();
-      document.getElementById('introduccion-section').style.display = 'none';
-      document.getElementById('principal-section').style.display = 'none';
-      document.getElementById('proyectos-section').style.display = 'none';
+    document.getElementById('introduccion-section').style.display = 'none';
+    document.getElementById('principal-section').style.display = 'none';
+    document.getElementById('proyectos-section').style.display = 'none';
       document.getElementById('formularios-section').style.display = 'block';
     });
   </script>
 </body>
 </html>
-
