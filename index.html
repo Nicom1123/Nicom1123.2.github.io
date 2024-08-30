@@ -118,21 +118,21 @@
   </section>
 
   <section id="formularios-section" style="display: none;">
-    <h2>Formulario de Sugerencias</h2>
+    <h2>Formularios</h2>
     <form action="mailto:nicomore1128@gmail.com" method="post" enctype="text/plain">
       <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre Completo</label>
-        <input type="text" class="form-control" id="nombre" name="nombre" required>
+        <label for="name" class="form-label">Nombre Completo</label>
+        <input type="text" class="form-control" id="name" name="name" required>
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Correo Electrónico</label>
         <input type="email" class="form-control" id="email" name="email" required>
       </div>
       <div class="mb-3">
-        <label for="sugerencia" class="form-label">Sugerencia</label>
-        <textarea class="form-control" id="sugerencia" name="sugerencia" rows="3" required></textarea>
+        <label for="suggestion" class="form-label">Sugerencia</label>
+        <textarea class="form-control" id="suggestion" name="suggestion" rows="4" required></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="submit" class="btn btn-primary">Entregar</button>
     </form>
   </section>
 
@@ -171,10 +171,9 @@
       document.getElementById('introduccion-section').style.display = 'none';
       document.getElementById('principal-section').style.display = 'none';
       document.getElementById('proyectos-section').style.display = 'none';
-});
-      
-
-      </script>
+      document.getElementById('formularios-section').style.display = 'block';
+    });
+  </script>
 </body>
 </html>
 
