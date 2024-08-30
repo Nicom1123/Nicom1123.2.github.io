@@ -55,7 +55,7 @@
     </div>
   </nav>
 
-  <section>
+  <section id="introduccion-section">
     <h2>Introducción</h2>
     <div class="card" style="width: 18rem;">
       <img src="https://us.123rf.com/450wm/yayayoy/yayayoy1211/yayayoy121100036/16537110-emoticon-mostrando-el-pulgar-hacia-arriba.jpg?ver=6" class="card-img-top" alt="Emoticon mostrando el pulgar hacia arriba">
@@ -81,6 +81,7 @@
   <script>
     document.getElementById('proyectos-link').addEventListener('click', function(event) {
       event.preventDefault();
+      document.getElementById('introduccion-section').style.display = 'none';
       document.getElementById('proyectos-section').style.display = 'block';
     });
   </script>
