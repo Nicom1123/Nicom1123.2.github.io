@@ -73,7 +73,6 @@
       </div>
     </div>
   </section>
-
   <section id="principal-section" style="display: none;">
     <h2>Principal</h2>
     <div class="d-flex flex-wrap">
@@ -83,18 +82,17 @@
           <p class="card-text">Hola soy Nicolas Morneo Miranda, nací en Colombia, tengo 17 años de edad.</p>
         </div>
       </div>
-      <div class="card project-card">
-        <div class="card-body">
+      <div class="card project-card">        <div class="card-body">
           <h5 class="card-title">Estudios</h5>
           <p class="card-text">Estoy estudiando tecnología en sistemas en la USC</p>
           <img src="https://www.elpais.com.co/especiales/educacion-superior/assets/img/u/usc-2-1.jpg" alt="USC Logo" class="img-fluid" style="width: 100px;">
         </div>
       </div>
-      <div class="card project-card">
+    <div class="card project-card">
         <div class="card-body">
           <h5 class="card-title">Motivación</h5>
           <p class="card-text">Cada día me esfuerzo por mejorar y aprender más y aunque me equivoque, me esfuerzo de aprender de esos errores.</p>
-        </div>
+      </div>
       </div>
     </div>
   </section>
@@ -124,24 +122,24 @@
   ></script>
   <script>
     document.getElementById('portafolio-link').addEventListener('click', function(event) {
-      event.preventDefault();
-      document.getElementById('introduccion-section').style.display = 'block';
-      document.getElementById('principal-section').style.display = 'none';
-      document.getElementById('proyectos-section').style.display = 'none';
+    event.preventDefault();
+    document.getElementById('introduccion-section').style.display = 'block';
+    document.getElementById('principal-section').style.display = 'none';
+    document.getElementById('proyectos-section').style.display = 'none';
     });
 
     document.getElementById('principal-link').addEventListener('click', function(event) {
       event.preventDefault();
       document.getElementById('introduccion-section').style.display = 'none';
-      document.getElementById('principal-section').style.display = 'block';
+    document.getElementById('principal-section').style.display = 'block'; 
       document.getElementById('proyectos-section').style.display = 'none';
     });
 
     document.getElementById('proyectos-link').addEventListener('click', function(event) {
       event.preventDefault();
-      document.getElementById('introduccion-section').style.display = 'none';
-      document.getElementById('principal-section').style.display = 'none';
-      document.getElementById('proyectos-section').style.display = 'block';
+  document.getElementById('introduccion-section').style.display = 'none';
+  document.getElementById('principal-section').style.display = 'none';
+   document.getElementById('proyectos-section').style.display = 'block';
     });
   </script>
 </body>
