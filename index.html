@@ -57,7 +57,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Formularios</a>
+            <a class="nav-link" href="#" id="formularios-link">Formularios</a>
           </li>
         </ul>
       </div>
@@ -73,6 +73,7 @@
       </div>
     </div>
   </section>
+
   <section id="principal-section" style="display: none;">
     <h2>Principal</h2>
     <div class="d-flex flex-wrap">
@@ -82,17 +83,18 @@
           <p class="card-text">Hola soy Nicolas Morneo Miranda, nací en Colombia, tengo 17 años de edad.</p>
         </div>
       </div>
-      <div class="card project-card">        <div class="card-body">
+      <div class="card project-card">
+        <div class="card-body">
           <h5 class="card-title">Estudios</h5>
           <p class="card-text">Estoy estudiando tecnología en sistemas en la USC</p>
           <img src="https://www.elpais.com.co/especiales/educacion-superior/assets/img/u/usc-2-1.jpg" alt="USC Logo" class="img-fluid" style="width: 100px;">
         </div>
       </div>
-    <div class="card project-card">
+      <div class="card project-card">
         <div class="card-body">
           <h5 class="card-title">Motivación</h5>
           <p class="card-text">Cada día me esfuerzo por mejorar y aprender más y aunque me equivoque, me esfuerzo de aprender de esos errores.</p>
-      </div>
+        </div>
       </div>
     </div>
   </section>
@@ -115,6 +117,25 @@
     </div>
   </section>
 
+  <section id="formularios-section" style="display: none;">
+    <h2>Formulario de Sugerencias</h2>
+    <form action="mailto:nicomore1128@gmail.com" method="post" enctype="text/plain">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre Completo</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="sugerencia" class="form-label">Sugerencia</label>
+        <textarea class="form-control" id="sugerencia" name="sugerencia" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -122,26 +143,32 @@
   ></script>
   <script>
     document.getElementById('portafolio-link').addEventListener('click', function(event) {
-    event.preventDefault();
-    document.getElementById('introduccion-section').style.display = 'block';
-    document.getElementById('principal-section').style.display = 'none';
-    document.getElementById('proyectos-section').style.display = 'none';
+      event.preventDefault();
+      document.getElementById('introduccion-section').style.display = 'block';
+      document.getElementById('principal-section').style.display = 'none';
+      document.getElementById('proyectos-section').style.display = 'none';
+      document.getElementById('formularios-section').style.display = 'none';
     });
 
     document.getElementById('principal-link').addEventListener('click', function(event) {
       event.preventDefault();
       document.getElementById('introduccion-section').style.display = 'none';
-    document.getElementById('principal-section').style.display = 'block'; 
+      document.getElementById('principal-section').style.display = 'block';
       document.getElementById('proyectos-section').style.display = 'none';
+      document.getElementById('formularios-section').style.display = 'none';
     });
 
     document.getElementById('proyectos-link').addEventListener('click', function(event) {
       event.preventDefault();
-  document.getElementById('introduccion-section').style.display = 'none';
-  document.getElementById('principal-section').style.display = 'none';
-   document.getElementById('proyectos-section').style.display = 'block';
+      document.getElementById('introduccion-section').style.display = 'none';
+      document.getElementById('principal-section').style.display = 'none';
+      document.getElementById('proyectos-section').style.display = 'block';
+      document.getElementById('formularios-section').style.display = 'none';
     });
-  </script>
-</body>
-</html>
+
+    document.getElementById('formularios-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.getElementById('introduccion-section').style.display = 'none';
+      document.getElementById('principal-section').style.display = 'none';
+      document.getElementById('proyectos-section').style.display
 
