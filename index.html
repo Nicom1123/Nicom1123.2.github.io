@@ -11,6 +11,12 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
     crossorigin="anonymous"
   />
+  <style>
+    .project-card {
+      width: 18rem;
+      margin: 1rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -73,17 +79,27 @@
       </div>
       <div class="col-md-6">
         <p>Estoy estudiando tecnología en sistemas en la USC</p>
-        <img src="https://www.elpais.com.co/especiales/educacion-superior/assets/img/u/usc-2-1.jpg" alt="USC Logo" class="img-fluid">
+        <img src="https://www.elpais.com.co/especiales/educacion-superior/assets/img/u/usc-2-1.jpg" alt="USC Logo" class="img-fluid" style="width: 100px;">
       </div>
     </div>
   </section>
 
   <section id="proyectos-section" style="display: none;">
     <h2>Proyectos</h2>
-    <ul>
-      <li>La creación de una aplicación móvil interactiva</li>
-      <li>Graduarme de la carrera</li>
-    </ul>
+    <div class="d-flex flex-wrap">
+      <div class="card project-card">
+        <div class="card-body">
+          <h5 class="card-title">Proyecto 1</h5>
+          <p class="card-text">La creación de una aplicación móvil interactiva</p>
+        </div>
+      </div>
+      <div class="card project-card">
+        <div class="card-body">
+          <h5 class="card-title">Proyecto 2</h5>
+          <p class="card-text">Graduarme de la carrera</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <script
